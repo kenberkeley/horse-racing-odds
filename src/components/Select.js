@@ -20,7 +20,7 @@ export default class Select extends React.Component {
   render () {
     const { uid, label, value, options, onChange, optionLabelField, optionValueField } = this.props
     return (
-      <div className='field has-addons'>
+      <div className='field has-addons' style={{ overflow: 'hidden' }}>
         <p className='control'>
           <label htmlFor={uid} className='button'>
             { label }

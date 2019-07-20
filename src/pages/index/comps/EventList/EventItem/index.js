@@ -12,7 +12,7 @@ export default class EventItem extends React.Component {
   countdownRenderer ({ completed, hours, minutes, seconds }) {
     const msg = completed
       ? 'already started'
-      : `will start in ${pad0(hours)}:${pad0(minutes)}:${pad0(seconds)}`
+      : `start in ${pad0(hours)}:${pad0(minutes)}:${pad0(seconds)}`
     return ` (${msg})`
   }
 
