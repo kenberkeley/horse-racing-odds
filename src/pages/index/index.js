@@ -34,9 +34,7 @@ export default class Index extends React.Component {
 
     const { eventList } = competitionList.find(item => item.id === displayedId)
     return (
-      <div className='card'>
-        <header className='card-header'>
-          <div className='card-header-title has-text-weight-normal'>
+      <div className='box'>
           <Select
             uid='venue'
             label='Venue'
@@ -44,12 +42,8 @@ export default class Index extends React.Component {
             options={competitionList}
             onChange={this.handleSelect}
           />
-          </div>
-        </header>
-        <div className='card-content'>
           <EventList eventList={eventList} />
         </div>
-      </div>
     )
   }
 }
