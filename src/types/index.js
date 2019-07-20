@@ -6,7 +6,7 @@ const OutcomeItemType = shape({
   name: string.isRequired,
   winPrice: number // could be undefined
 })
-const OutcomeListType = arrayOf(OutcomeItemType)
+export const OutcomeListType = arrayOf(OutcomeItemType)
 
 const MarketItemType = shape({
   id: number.isRequired,
