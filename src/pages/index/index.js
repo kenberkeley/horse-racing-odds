@@ -2,6 +2,7 @@ import React from 'react'
 import ajax from '~/utils/ajax'
 import Select from '~/components/Select'
 import EventList from './comps/EventList'
+import styles from './index.module.css'
 
 const API_URL = 'https://adsfeed.sportsbet.com.au/v1/sportsbook/competitions?classIds=1&detailsLevel=O&numMarkets=1'
 
@@ -34,16 +35,16 @@ export default class Index extends React.Component {
 
     const { eventList } = competitionList.find(item => item.id === displayedId)
     return (
-      <div className='box'>
-          <Select
-            uid='venue'
-            label='Venue'
-            value={displayedId}
-            options={competitionList}
-            onChange={this.handleSelect}
-          />
-          <EventList eventList={eventList} />
-        </div>
+      <div className={`box ${styles.index}`}>
+        <Select
+          uid='venue'
+          label='Venue'
+          value={displayedId}
+          options={competitionList}
+          onChange={this.handleSelect}
+        />
+        <EventList eventList={eventList} />
+      </div>
     )
   }
 }
