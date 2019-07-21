@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/horse-racing-odds/precache-manifest.de07a016e11f5cfbc3e47fa1691021a3.js"
+  "/horse-racing-odds/precache-manifest.7262a2b298f8bd2ea134cdaf7ebd8032.js"
 );
 
 self.addEventListener('message', (event) => {

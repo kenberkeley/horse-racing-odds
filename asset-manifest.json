@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/horse-racing-odds/static/css/main.4e8d29a3.chunk.css",
-    "main.js": "/horse-racing-odds/static/js/main.b21a583d.chunk.js",
-    "main.js.map": "/horse-racing-odds/static/js/main.b21a583d.chunk.js.map",
+    "main.js": "/horse-racing-odds/static/js/main.0a695339.chunk.js",
+    "main.js.map": "/horse-racing-odds/static/js/main.0a695339.chunk.js.map",
     "runtime~main.js": "/horse-racing-odds/static/js/runtime~main.e635c925.js",
     "runtime~main.js.map": "/horse-racing-odds/static/js/runtime~main.e635c925.js.map",
     "static/css/2.e6157a56.chunk.css": "/horse-racing-odds/static/css/2.e6157a56.chunk.css",
-    "static/js/2.f6ac806e.chunk.js": "/horse-racing-odds/static/js/2.f6ac806e.chunk.js",
-    "static/js/2.f6ac806e.chunk.js.map": "/horse-racing-odds/static/js/2.f6ac806e.chunk.js.map",
+    "static/js/2.3247ca25.chunk.js": "/horse-racing-odds/static/js/2.3247ca25.chunk.js",
+    "static/js/2.3247ca25.chunk.js.map": "/horse-racing-odds/static/js/2.3247ca25.chunk.js.map",
     "index.html": "/horse-racing-odds/index.html",
-    "precache-manifest.de07a016e11f5cfbc3e47fa1691021a3.js": "/horse-racing-odds/precache-manifest.de07a016e11f5cfbc3e47fa1691021a3.js",
+    "precache-manifest.7262a2b298f8bd2ea134cdaf7ebd8032.js": "/horse-racing-odds/precache-manifest.7262a2b298f8bd2ea134cdaf7ebd8032.js",
     "service-worker.js": "/horse-racing-odds/service-worker.js",
     "static/css/2.e6157a56.chunk.css.map": "/horse-racing-odds/static/css/2.e6157a56.chunk.css.map",
     "static/css/main.4e8d29a3.chunk.css.map": "/horse-racing-odds/static/css/main.4e8d29a3.chunk.css.map"
