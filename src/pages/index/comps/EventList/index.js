@@ -11,13 +11,13 @@ export default class EventList extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      displayedId: props.eventList[0].id // TODO: undefined?
+      displayedId: props.eventList[0].id
     }
   }
 
   componentWillReceiveProps (props) {
     this.setState({
-      displayedId: props.eventList[0].id // TODO: undefined?
+      displayedId: props.eventList[0].id
     })
   }
 
@@ -30,7 +30,7 @@ export default class EventList extends React.Component {
   render () {
     const { eventList } = this.props
     const { displayedId } = this.state
-    const event = eventList.find(item => item.id === displayedId) // TODO: undefined?
+    const event = eventList.find(item => item.id === displayedId)
     return (
       <div>
         <Select

@@ -45,10 +45,10 @@ export default class Index extends React.Component {
     )
   }
 
-  renderNoData () {
+  renderNoData (msg = 'No data') {
     return (
       <p className='has-text-centered is-italic'>
-        Sorry, no data to display.
+        ( { msg } )
       </p>
     )
   }
@@ -59,7 +59,7 @@ export default class Index extends React.Component {
       return this.renderLoading()
     }
     if (!competitionList.length) {
-      return this.renderNoData()
+      return this.renderNoData('No competitions')
     }
 
     const { eventList } = competitionList.find(item => item.id === displayedId)
@@ -72,7 +72,11 @@ export default class Index extends React.Component {
           options={competitionList}
           onChange={this.handleSelect}
         />
-        <EventList eventList={eventList} />
+        {
+          eventList.length
+            ? <EventList eventList={eventList} />
+            : this.renderNoData('No events')
+        }
       </div>
     )
   }
