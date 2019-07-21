@@ -1,4 +1,5 @@
 import React from 'react'
+import DocumentTitle from 'react-document-title'
 import ajax from '~/utils/ajax'
 import Select from '~/components/Select'
 import EventList from './comps/EventList'
@@ -10,15 +11,19 @@ export default class Index extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
+      isLoading: false,
       displayedId: null,
       competitionList: []
     }
   }
 
   async componentDidMount () {
+    this.setState({ isLoading: true })
+
     const { competitionList } = await ajax({ url: API_URL })
     this.setState({
-      displayedId: competitionList[0].id, // TODO: undefined?
+      isLoading: false,
+      displayedId: competitionList.length ? competitionList[0].id : null,
       competitionList
     })
   }
@@ -29,9 +34,33 @@ export default class Index extends React.Component {
     })
   }
 
+  renderLoading () {
+    const msg = 'Loading Data...'
+    return (
+      <DocumentTitle title={msg}>
+        <p className='has-text-centered'>
+          { msg }
+        </p>
+      </DocumentTitle>
+    )
+  }
+
+  renderNoData () {
+    return (
+      <p className='has-text-centered is-italic'>
+        Sorry, no data to display.
+      </p>
+    )
+  }
+
   render () {
-    const { displayedId, competitionList } = this.state
-    if (!competitionList.length) return null // TODO: show loading
+    const { isLoading, displayedId, competitionList } = this.state
+    if (isLoading) {
+      return this.renderLoading()
+    }
+    if (!competitionList.length) {
+      return this.renderNoData()
+    }
 
     const { eventList } = competitionList.find(item => item.id === displayedId)
     return (
