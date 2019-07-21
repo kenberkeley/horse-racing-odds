@@ -9,6 +9,7 @@ Click [here](https://kenberkeley.github.io/horse-racing-odds).
 ## § Features
 
 * Basics: React + Bulma + Axios
+* Replace [cumbersome](https://bundlephobia.com/result?p=moment) Moment.js with [Day.js](https://github.com/iamkun/dayjs)
 * Get rid of `../../../` by [link-module-alias](https://github.com/Rush/link-module-alias)
 * [Auto polyfill](https://bit.ly/2OhmHSW) for old browsers, powered by [Polyfill.io](https://github.com/Financial-Times/polyfill-service)
 
