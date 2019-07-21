@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9cdf1cee82f2f7d802aaaf5db20b3758",
+    "revision": "5c7e874c4e370cc131a28ad07c672e42",
     "url": "/horse-racing-odds/index.html"
   },
   {
